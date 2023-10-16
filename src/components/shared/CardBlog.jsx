@@ -9,7 +9,7 @@ import { Avatar, Button, Card, CardActions, CardContent, CardHeader, CardMedia, 
 import { shortHandler } from '../shared/function';
 
 const CardBlog = ({ posts }) => {
-    return <Grid container spacing={1}>
+    return <Grid container spacing={2}>
 
         {posts.map(post => <Grid item xs={12} sm={6} md={4} key={post.id} >
 

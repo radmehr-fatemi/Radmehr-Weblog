@@ -26,20 +26,20 @@ const AuthorPage = () => {
         return <Container maxWidth="lg"  >
             <Grid container sx={{ minHeight: "86vh" }}>
 
-                <Grid item xs={12} display="flex" flexDirection="column" alignItems="center" my={2}  >
+                <Grid item xs={12} display="flex" flexDirection="column" alignItems="center" my={2} >
                     <Avatar src={avatar.url} sx={{ width: 100, height: 100, mb: 2, boxShadow: "0px 0px 4px 4px #fff ,0px 0px 4px 4px #224F6E" }} />
                     <Typography component="h3" variant='h6' fontWeight="700" color="#224F6E" lineHeight={.9} > {name} </Typography>
-                    <Typography component="p" variant='p' fontWeight="400" color="#224F6E"> {field} </Typography>
+                    <Typography component="p" variant='p' fontWeight="300" color="#224F6E"> {field} </Typography>
                 </Grid>
 
                 <Grid item xs={12} px={2} >
                     <div style={{ textAlign: "center" }} dangerouslySetInnerHTML={{ __html: (description.html) }} ></div>
                 </Grid>
 
-                <Grid item xs={12} >
+                <Grid item xs={12} mt={3} >
                     <Typography
                         component="h3"
-                        variant='h6'
+                        variant='h5'
                         fontWeight="700"
                         color="#224F6E"
                         lineHeight={.9}

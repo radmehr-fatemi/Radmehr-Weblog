@@ -14,6 +14,7 @@ import BackIcon from '@mui/icons-material/ReplyAll';
 
 //Component
 import SpinnerLoader from '../shared/SpinnerLoader';
+import ScrollToTop from '../shared/ScrollToTop';
 
 const BlogPage = () => {
 
@@ -62,6 +63,7 @@ const BlogPage = () => {
                 <Grid item></Grid>
 
             </Grid>
+            <ScrollToTop />
         </Container>
     }
 };
