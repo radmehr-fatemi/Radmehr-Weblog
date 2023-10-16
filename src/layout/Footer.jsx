@@ -10,8 +10,8 @@ const Footer = () => {
                 <Typography
                     padding={.6}
                     textAlign="center"
-                    color="primary"
-                    bgcolor="#e5e5e5"
+                    color="#fff"
+                    bgcolor="#4E7590"
                 > پروژه وبلاگ | با کد نویسی رادمهر </Typography>
 
             </Grid>

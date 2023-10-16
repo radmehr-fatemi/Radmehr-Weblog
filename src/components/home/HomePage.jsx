@@ -22,7 +22,7 @@ const HomePage = () => {
                 <Authors />
             </Grid>
 
-            <Grid item xs={12} md={6} my={1} >
+            <Grid item xs={12} md={9} my={1} >
             <Typography
                     component="h2"
                     variant='h6'

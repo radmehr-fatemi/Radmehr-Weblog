@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/client";
 import { Link } from 'react-router-dom';
 
 //URI
-import { GET_AUTHORS } from '../../graphql/queries';
+import { GET_AUTHORS_INFO } from '../../graphql/queries';
 
 //MUI
 import { Avatar, Divider, Grid, Typography } from '@mui/material';
@@ -13,7 +13,7 @@ import SpinnerLoader from '../shared/SpinnerLoader';
 
 const Authors = () => {
 
-    const { data, loading, error, called } = useQuery(GET_AUTHORS);
+    const { data, loading, error, called } = useQuery(GET_AUTHORS_INFO);
 
     if (loading) return <SpinnerLoader />
     if (error) return <h3> Sorry there is an error </h3>
@@ -21,7 +21,7 @@ const Authors = () => {
     if (called) {
         const { authors } = data;
 
-        return <Grid container boxShadow="1px 1px 6px #c3c3ff" borderRadius={2} p={.6} >
+        return <Grid container boxShadow="1px 1px 6px #B0C4Df" borderRadius={2} p={.6} >
             {
                 authors.map((author, index) => <React.Fragment key={author.id} >
                     <Grid item
@@ -30,7 +30,7 @@ const Authors = () => {
                         py={1}
                     >
 
-                        <Link to={`/blogs/${author.slug}`}
+                        <Link to={`/authors/${author.slug}`}
                             style={{ textDecoration: "none", display: "flex", alignItems: "center", background: "333" }}
                         >
 
