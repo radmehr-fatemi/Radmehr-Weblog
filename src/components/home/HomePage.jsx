@@ -9,7 +9,7 @@ import Blogs from '../blog/Blogs';
 
 const HomePage = () => {
     return <Container maxWidth="lg" >
-        <Grid container spacing={1} >
+        <Grid container spacing={1} sx={{ minHeight: "100vh" }} >
 
             <Grid item xs={12} md={3} my={1} >
                 <Typography
@@ -17,7 +17,7 @@ const HomePage = () => {
                     variant='h6'
                     fontWeight="700"
                     mb={.5}
-                    color="#000080"
+                    color="#000000"
                 > نویسندگان : </Typography>
                 <Authors />
             </Grid>
@@ -28,7 +28,7 @@ const HomePage = () => {
                     variant='h6'
                     fontWeight="700"
                     mb={.5}
-                    color="#000080"
+                    color="#000000"
                 > مقالات : </Typography>
                 <Blogs />
             </Grid>

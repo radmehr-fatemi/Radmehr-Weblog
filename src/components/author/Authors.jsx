@@ -38,7 +38,7 @@ const Authors = () => {
                             <Typography
                                 component="h4"
                                 variant='p'
-                                color="text.secondary"
+                                color="#3C5F78"
                             >{author.name} </Typography>
                         </Link>
                     </Grid>
