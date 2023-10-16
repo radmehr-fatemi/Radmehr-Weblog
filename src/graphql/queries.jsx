@@ -46,8 +46,8 @@ const GET_AUTHOR_INFO = gql`
 `;
 
 const GET_POST_INFO = gql`
-    query {
-        post(where: {slug: ""}) {
+    query getPost( $slug: String ) {
+        post(where: {slug: $slug}) {
             coverPhoto { url }
             title
             content { html }
