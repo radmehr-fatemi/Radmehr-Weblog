@@ -1,15 +1,20 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 //Component
 import Layout from './layout';
 import HomePage from './components/home/HomePage';
+import AuthorPage from './components/author/AuthorPage';
+import BlogPage from './components/blog/BlogPage';
 
 const App = () => {
   return (
     <Layout>
       <Routes>
         <Route path='/' element={ <HomePage /> } />
+        <Route path='/authors/:slug' element={ <AuthorPage /> } />
+        <Route path='/blogs/:slug' element={ <BlogPage /> } />
+        <Route path='/*' element={ <Navigate to="/" /> } />
       </Routes>
     </Layout>
   );

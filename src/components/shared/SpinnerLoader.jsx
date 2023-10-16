@@ -5,7 +5,7 @@ import { Dna, ThreeCircles } from 'react-loader-spinner';
 
 const SpinnerLoader = () => {
     return (
-        <div style={{ width: "100%" ,height: "100%" ,padding: "1rem" }} >  
+        <div style={{ width: "100%" ,minHeight: "100%" ,padding: "1rem" }} >  
             <ThreeCircles
                 height="200"
                 width="100%"
