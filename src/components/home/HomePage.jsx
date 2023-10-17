@@ -8,7 +8,7 @@ import Authors from '../author/Authors';
 import Blogs from '../blog/Blogs';
 
 const HomePage = () => {
-    return <Container maxWidth="lg" sx={{ minHeight: "86vh" }}  >
+    return <Container maxWidth="lg" sx={{ minHeight: "100vh" }}  >
         <Grid container spacing={1} >
 
             <Grid item xs={12} md={3} my={1} >

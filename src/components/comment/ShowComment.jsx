@@ -17,7 +17,7 @@ const ShowComment = ({ slug }) => {
     if (loading) return <SpinnerLoader />
     if (error) return <h1>Sorry there is an error...</h1>
 
-    if (called) return <Grid container my={2} >
+    if (called) return <Grid container my={3} >
 
         <Grid item xs={12} mb={1} >
             <Typography

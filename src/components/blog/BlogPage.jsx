@@ -49,7 +49,7 @@ const BlogPage = () => {
                     <img src={coverPhoto.url} alt={slug} style={{ width: "100%", borderRadius: 20  }} />
                 </Grid>
 
-                <Grid item xs={8} sm={6} md={4} my={2} boxShadow='1px 1px 6px 2px #B0C4Df' p={1} borderRadius={2} display="flex" alignItems="center" justifyContent="flex-start" >
+                <Grid item xs={10} sm={6} md={4} my={2} boxShadow='1px 1px 6px 2px #B0C4Df' p={1} borderRadius={2} display="flex" alignItems="center" justifyContent="flex-start" >
                     <Avatar src={avatar.url} sx={{ ml: 1 }} />
                     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "center" }} >
                         <Typography component="h4" variant='p' color="#224F6E" > {name} </Typography>

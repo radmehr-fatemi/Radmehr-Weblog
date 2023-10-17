@@ -83,7 +83,10 @@ const CommentField = ({ slug }) => {
         </Grid>
 
         <Grid item xs={12} >
-            <Button size='small' variant='contained' onClick={commentHandler} > ارسال </Button>
+            {loading ?
+                    <Button size='small' variant='contained' disabled >  در حال ارسال </Button> :
+                    <Button size='small' variant='contained' onClick={commentHandler} > ارسال </Button>
+            }
         </Grid>
 
         <ToastContainer style={{
@@ -91,7 +94,7 @@ const CommentField = ({ slug }) => {
             textAlign: "right",
             top: ".6rem",
             fontWeight: "700",
-            padding : "0 8px",
+            padding: "0 8px",
         }} />
     </Grid>
 
