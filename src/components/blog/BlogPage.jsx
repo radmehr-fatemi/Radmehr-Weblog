@@ -16,13 +16,14 @@ import BackIcon from '@mui/icons-material/ReplyAll';
 import SpinnerLoader from '../shared/SpinnerLoader';
 import ScrollToTop from '../shared/ScrollToTop';
 import CommentField from '../comment/CommentField';
+import ShowComment from '../comment/ShowComment';
 
 const BlogPage = () => {
 
     const { slug } = useParams();
     const { data, loading, error, called } = useQuery(GET_POST_INFO, { variables: { slug } });
     const navigate = useNavigate();
-
+    
     if (loading) return <div style={{ minHeight: "86vh" }} > <SpinnerLoader /> </div>
     if (error) return <h1>Sorry there is an error...</h1>
 
@@ -44,11 +45,11 @@ const BlogPage = () => {
                     <BackIcon onClick={() => navigate(-1)} />
                 </Grid>
 
-                <Grid item xs={12} >
-                    <img src={coverPhoto.url} alt={slug} style={{ width: "100%", borderRadius: 20 }} />
+                <Grid item xs={12} sm={10}>
+                    <img src={coverPhoto.url} alt={slug} style={{ width: "100%", borderRadius: 20  }} />
                 </Grid>
 
-                <Grid item xs={12} my={2} boxShadow='1px 1px 6px 2px #B0C4Df' p={1} borderRadius={2} display="flex" alignItems="center" justifyContent="flex-start" >
+                <Grid item xs={8} sm={6} md={4} my={2} boxShadow='1px 1px 6px 2px #B0C4Df' p={1} borderRadius={2} display="flex" alignItems="center" justifyContent="flex-start" >
                     <Avatar src={avatar.url} sx={{ ml: 1 }} />
                     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "center" }} >
                         <Typography component="h4" variant='p' color="#224F6E" > {name} </Typography>
@@ -63,6 +64,10 @@ const BlogPage = () => {
 
                 <Grid item xs={12} >
                     <CommentField slug={slug} />
+                </Grid>
+
+                <Grid item xs={12} >
+                    <ShowComment slug={slug} />
                 </Grid>
 
             </Grid>
