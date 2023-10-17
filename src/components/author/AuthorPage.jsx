@@ -36,7 +36,7 @@ const AuthorPage = () => {
                     <div style={{ textAlign: "center" }} dangerouslySetInnerHTML={{ __html: (description.html) }} ></div>
                 </Grid>
 
-                <Grid item xs={12} mt={3} >
+                <Grid item xs={12} my={3} >
                     <Typography
                         component="h3"
                         variant='h5'

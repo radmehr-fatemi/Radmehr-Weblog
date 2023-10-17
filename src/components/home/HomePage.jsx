@@ -6,6 +6,7 @@ import { Container, Grid, Typography } from '@mui/material';
 //Component
 import Authors from '../author/Authors';
 import Blogs from '../blog/Blogs';
+import ScrollToTop from '../shared/ScrollToTop';
 
 const HomePage = () => {
     return <Container maxWidth="lg" sx={{ minHeight: "100vh" }}  >
@@ -34,6 +35,7 @@ const HomePage = () => {
             </Grid>
 
         </Grid>
+        <ScrollToTop />
     </Container>
 };
 
