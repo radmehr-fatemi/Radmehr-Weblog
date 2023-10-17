@@ -29,16 +29,17 @@ const CardBlog = ({ posts }) => {
                     />
                 }
 
-                <CardMedia
+                {/* <CardMedia
                     component="img"
                     // height="140"
-                    width="190"
+                    width="160"
                     height="140"
                     image={post.coverPhoto.url}
                     alt={post.slug}
-                />
+                /> */}
+                <img src={ post.coverPhoto.url } alt={ post.slug } style={{ width: "100%", height: "180px" }}  />
 
-                <CardContent>
+                <CardContent sx={{ p: 1 }} >
                     <Typography component="h4" variant='p' color="primary" > {shortHandler(post.title, 30)} ... </Typography>
                 </CardContent>
 

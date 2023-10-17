@@ -15,6 +15,7 @@ import BackIcon from '@mui/icons-material/ReplyAll';
 //Component
 import SpinnerLoader from '../shared/SpinnerLoader';
 import ScrollToTop from '../shared/ScrollToTop';
+import CommentField from '../comment/CommentField';
 
 const BlogPage = () => {
 
@@ -60,7 +61,9 @@ const BlogPage = () => {
                     <div dangerouslySetInnerHTML={{ __html: (content.html) }} ></div>
                 </Grid>
 
-                <Grid item></Grid>
+                <Grid item xs={12} >
+                    <CommentField slug={slug} />
+                </Grid>
 
             </Grid>
             <ScrollToTop />
