@@ -9,6 +9,8 @@ import Blogs from '../blog/Blogs';
 import ScrollToTop from '../shared/ScrollToTop';
 
 const HomePage = () => {
+    
+  
     return <Container maxWidth="lg" sx={{ minHeight: "100vh" }}  >
         <Grid container spacing={1} >
 
@@ -24,7 +26,7 @@ const HomePage = () => {
             </Grid>
 
             <Grid item xs={12} md={9} my={1} >
-            <Typography
+                <Typography
                     component="h2"
                     variant='h6'
                     fontWeight="700"
@@ -35,6 +37,7 @@ const HomePage = () => {
             </Grid>
 
         </Grid>
+        
         <ScrollToTop />
     </Container>
 };
