@@ -14,7 +14,7 @@ const App = () => {
   useEffect( () => {
     setTimeout(() => {
          toast("ممنون بچه ها از حمایتتون")
-     }, 2000)
+     }, 3500)
 } ,[])
 
   return (
